@@ -1,0 +1,31 @@
+{
+  "name": "tailwind-laravel-mix-starter",
+  "version": "0.0.1",
+  "description": "a starter with laravel mix and tailwind",
+  "main": "index.js",
+  "author": "Jonas Schneider",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "2.0.1",
+    "glob-all": "^3.1.0",
+    "laravel-mix": "^4.0.16",
+    "laravel-mix-tailwind": "^0.1.0",
+    "nodemon": "^1.19.1",
+    "resolve-url-loader": "2.3.1",
+    "sass": "^1.21.0",
+    "sass-loader": "7.*",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "nodemon --watch webpack.mix.js --exec \"npm run development -- --watch\"",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.0.4"
+  }
+}

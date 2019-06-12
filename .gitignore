@@ -1,0 +1,29 @@
+# ENV
+.env
+
+# COMPOSER
+/vendor
+
+# DIST
+/dist
+
+# BUILD FILES
+node_modules
+/yarn-error.log
+
+# MISC FILES
+/.idea
+.DS_Store
+.cache
+.project
+.settings
+*.esproj
+*.sublime-workspace
+*.sublime-project
+*.tmproj
+*.tmproject
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
