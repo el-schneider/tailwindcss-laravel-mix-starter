@@ -7,14 +7,15 @@
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "browser-sync-webpack-plugin": "2.0.1",
+    "browser-sync-webpack-plugin": "2.2.2",
+    "cross-env": "^7.0.2",
     "glob-all": "^3.1.0",
-    "laravel-mix": "^4.0.16",
+    "laravel-mix": "^5.0.4",
     "laravel-mix-tailwind": "^0.1.0",
-    "nodemon": "^1.19.1",
-    "resolve-url-loader": "2.3.1",
-    "sass": "^1.21.0",
-    "sass-loader": "7.*",
+    "nodemon": "^2.0.4",
+    "resolve-url-loader": "3.1.1",
+    "sass": "^1.26.8",
+    "sass-loader": "8.0.2",
     "vue-template-compiler": "^2.6.10"
   },
   "scripts": {
@@ -27,6 +28,6 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "dependencies": {
-    "tailwindcss": "^1.0.4"
+    "tailwindcss": "^1.4.6"
   }
 }
